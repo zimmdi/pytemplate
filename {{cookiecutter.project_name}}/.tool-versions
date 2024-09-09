@@ -1,0 +1,2 @@
+python {{cookiecutter.python_version}}
+poetry {{cookiecutter.poetry_version}}
