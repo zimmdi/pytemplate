@@ -9,3 +9,7 @@ install with cookiecutter
 Then run in created project dir
 ```poetry config virtualenvs.in-project true```
 ```poetry install```
+
+To run pre-commit you need to call
+
+```poetry run pre-commit```
