@@ -13,6 +13,7 @@ python = "^3.10"
 pytest = "^8.2.2"
 ruff = "^0.5.2"
 mypy = "^1.11.2"
+pre-commit = "^3.8.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -25,9 +26,6 @@ line-length = 100
 quote-style = "single"
 indent-style = "tab"
 docstring-code-format = true
-
-[tool.poetry.scripts]
-run-all = "src.{{cookiecutter.project_name}}._scripts:run_all"
 
 [tool.mypy]
 disallow_untyped_defs = true

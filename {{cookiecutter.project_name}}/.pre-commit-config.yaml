@@ -1,0 +1,17 @@
+repos:
+ - repo: local
+   hooks:
+    - id: ruff
+      name: ruff
+      language: system
+      entry: poetry
+      args: [ "run", "ruff", "format" ]
+      files: src/
+      types: [python]
+    - id: mypy
+      name: mypy
+      language: system
+      entry: poetry
+      args: [ "run", "mypy"]
+      files: src/
+      types: [python]
